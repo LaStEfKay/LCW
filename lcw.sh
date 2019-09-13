@@ -20,6 +20,7 @@ echo -e '
 [3] SQLmap Kur
 [4] Hunner Kur
 [5] İp Yer tespit Kur
+[00] Çıkış
 '
 read -p "İslem Numaranız: " islem
 
@@ -89,6 +90,12 @@ cd $HOME/LCW
 clear
 sleep 1
 bash lcw.sh
+
+elif [[ $islem == 00 ]]; then
+
+clear
+echo 'Last Cyber Web İyi Günler diler'
+exit
 
 #gg
 else
